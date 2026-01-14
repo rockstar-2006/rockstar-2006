@@ -11,13 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Generate Pacman SVG
+      - name: Generate Clean Pacman
         uses: Platane/snk@v3
         with:
           github_user_name: rockstar-2006
+
           outputs: |
-            output/pacman-contribution-graph.svg
-            output/pacman-contribution-graph-dark.svg?palette=github-dark
+            output/pacman.svg?color_snake=00f0ff&color_dots=0d1117,161b22,1f6feb,39d353
+            output/pacman-dark.svg?color_snake=00f0ff&color_dots=0d1117,161b22,58a6ff,3fb950
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
