@@ -85,8 +85,14 @@ I have won **3 national-level and 2 state-level hackathons**, working on project
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) 
 
-### Mobile & Cross-platform
+### Mobile Development
+#### Android Native
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) 
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white) 
+
+#### Cross-platform
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) 
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
 
 ### AI/ML
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) 
@@ -138,7 +144,11 @@ I have won **3 national-level and 2 state-level hackathons**, working on project
 
 ## 🎮 Contribution Graph Game
 
-![Pacman Contribution Graph](https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman-contribution-graph.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman-contribution-graph.svg" width="100%">
+</picture>
 
 *Note: This shows a Pacman-style visualization of my GitHub contributions*
 
