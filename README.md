@@ -146,10 +146,9 @@ I have won **3 national-level and 2 state-level hackathons**, working on project
 
 ## ⚡ Engineering Activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman.svg" width="100%">
-</picture>
+![](https://github-readme-stats.vercel.app/api?username=rockstar-2006&theme=dark&show_icons=true&hide_border=true&count_private=true)
+![](https://github-readme-streak-stats.herokuapp.com/?user=rockstar-2006&theme=dark&hide_border=true)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=rockstar-2006&theme=dark&hide_border=true&layout=compact)
 
 
 
