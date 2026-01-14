@@ -1,29 +1,44 @@
-name: Generate Pacman Contribution Graph
+name: Update Pacman Contribution Graph
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
+    # Runs at 00:00 UTC every day
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual triggering
+  push:
+    branches:
+      - main
 
 jobs:
-  generate:
+  update-pacman:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
+    
     steps:
-      - name: Generate Pacman SVG
-        uses: abozanona/pacman-contribution-graph@main
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
-          github_user_name: rockstar-2006
-          theme: dark
-          speed: 2
-          output_file: pacman.svg
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          target_branch: output
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          python-version: '3.x'
+      
+      - name: Generate Pacman Contribution Graph
+        uses: jstrieb/github-stats@master
+        with:
+          # Optional: List of usernames of other accounts whose contributions
+          # you want to include. This can help if you changed your username.
+          # other_users: "old_username,another_username"
+          
+          # Whether to include private contributions in the stats
+          include_private_contributions: false
+          
+          # Theme for the generated images (light, dark, or auto)
+          theme: "auto"
+          
+          # Base repository for committing the generated files
+          base_repository: "rockstar-2006/rockstar-2006"
+          
+          # GITHUB_TOKEN secret
+          token: ${{ secrets.GITHUB_TOKEN }}
