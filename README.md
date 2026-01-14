@@ -147,10 +147,10 @@ I have won **3 national-level and 2 state-level hackathons**, working on project
 ## ⚡ Engineering Activity
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman.svg">
-  <img alt="GitHub Activity Pacman" src="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/rockstar-2006/rockstar-2006/output/pacman.svg" width="100%">
 </picture>
+
 
 
 *Note: This shows a Pacman-style visualization of my GitHub contributions*
