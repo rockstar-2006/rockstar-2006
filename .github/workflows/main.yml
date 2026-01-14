@@ -6,24 +6,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+    permissions:
+      contents: write
 
+    steps:
       - name: Generate Pacman SVG
-        uses: Platane/snk@v3
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: rockstar-2006
-          theme: pacman
-          outputs: |
-            output/pacman.svg
-            output/pacman-dark.svg?palette=github-dark
+          theme: dark
+          speed: 2
+          output_file: pacman.svg
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: output
+          build_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
